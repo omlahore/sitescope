@@ -1,0 +1,11 @@
+node_modules/
+*.html
+!src/**/*.html
+.DS_Store
+*.log
+.env
+.env.*
+coverage/
+dist/
+build/
+*.tgz

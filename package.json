@@ -1,0 +1,52 @@
+{
+  "name": "sitescope",
+  "version": "1.0.0",
+  "description": "One-command website health report. Performance, SEO, security, and accessibility — zero config, zero dependencies.",
+  "main": "src/index.js",
+  "bin": {
+    "sitescope": "./bin/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node bin/cli.js",
+    "dev": "node bin/cli.js",
+    "test": "node --test src/utils/grading.test.js src/utils/parser.test.js src/index.test.js src/reporters/html.test.js src/checks/indexing.test.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0"
+  },
+  "keywords": [
+    "seo",
+    "audit",
+    "performance",
+    "website",
+    "health-check",
+    "security-headers",
+    "accessibility",
+    "cli",
+    "npx",
+    "web-audit",
+    "site-audit",
+    "lighthouse-alternative",
+    "zero-config"
+  ],
+  "author": "Om Lahorey <omlahorey@gmail.com> (https://omlahore.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omlahore/sitescope.git"
+  },
+  "homepage": "https://github.com/omlahore/sitescope#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
